@@ -154,6 +154,9 @@ function truncateText(text, length = 150) {
   return text.length > length ? text.substring(0, length) + '...' : text;
 }
 
+// Make helper functions globally available for scripts like visits.js
+window.truncateText = truncateText;
+
 /**
  * Loads JSON data from a file
  * @param {string} filePath - Path to JSON file
@@ -171,6 +174,9 @@ async function loadJSON(filePath) {
     return null;
   }
 }
+
+// Make loadJSON globally available for scripts like visits.js
+window.loadJSON = loadJSON;
 
 /* ---- DYNAMIC CONTENT LOADER ---- */
 /**
