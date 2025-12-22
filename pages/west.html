@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore West India's destinations including Goa and Maharashtra.">
+    <meta name="keywords" content="West India, Goa, Maharashtra, tourism, destinations">
+    <title>West India - Adventure India</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <div class="nav__logo">
+            <a href="/index.html">
+                <i class="fas fa-compass"></i> Adventure India
+            </a>
+        </div>
+        <button class="nav__toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+            <li class="nav__item">
+                <a href="/index.html" class="nav__link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/north.html" class="nav__link">
+                    <i class="fas fa-map"></i> North
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/south.html" class="nav__link">
+                    <i class="fas fa-map"></i> South
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/east.html" class="nav__link">
+                    <i class="fas fa-map"></i> East
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/west.html" class="nav__link">
+                    <i class="fas fa-map"></i> West
+                </a>
+                </div>
+            </li>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <header>
+        <div class="header__background" style="background: url('../assets/images/destinations/kerala.jpg') no-repeat center;">
+            <div class="header__overlay"></div>
+            <div class="header__content">
+                <h1 class="header__title">West India</h1>
+                <p class="header__subtitle">Beaches, Culture, and Modern Metropolis</p>
+            </div>
+
+    </header>
+
+
+    <!-- Visitor options moved below hero to avoid overlap -->
+    <div class="container">
+        <div class="visitor-options">
+            <a class="btn btn-primary" href="/pages/visit-weekend.html?region=west">Weekend Traveler</a>
+            <a class="btn btn-primary" href="/pages/visit-food.html?region=west">Culinary Explorer</a>
+            <a class="btn btn-primary" href="/pages/visit-complete.html?region=west">Comprehensive Guide</a>
+            <a class="btn btn-primary" href="/pages/visit-adventure.html?region=west">Adventure Seeker</a>
+        </div>
+    </div>
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- ===== INTRODUCTION SECTION ===== -->
+        <section class="container">
+            <h2>Welcome to West India</h2>
+            <p style="font-size: 1.1rem;">
+                West India is a dynamic region that seamlessly blends pristine beaches, ancient heritage, and modern urban energy. From Goa's palm-fringed shores and Portuguese heritage to Maharashtra's bustling Mumbai and ancient Ajanta-Ellora caves, West India offers an exciting mix of relaxation, adventure, and cultural exploration.
+            </p>
+        </section>
+
+        <!-- ===== DESTINATIONS SECTION ===== -->
+        <section style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="text-center mb-3">West India Destinations</h2>
+                <div id="west-destinations-container" class="cards-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+                    <!-- Destinations will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA SECTION ===== -->
+        <section>
+            <div class="container text-center">
+                <h2>Discover the Best of West India</h2>
+                <p style="font-size: 1.1rem; margin-bottom: var(--spacing-lg);">
+                    Explore more destinations and plan your next adventure.
+                </p>
+                <a href="../index.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer__content">
+            <div class="footer__section">
+                <h4><i class="fas fa-compass"></i> Adventure India</h4>
+                <p>Your gateway to India's most extraordinary destinations and experiences.</p>
+            </div>
+            <div class="footer__section">
+                <h4>Quick Links</h4>
+                <a href="../index.html">Home</a>
+                <a href="west.html">West India</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 Adventure India. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const destinationsData = await loadJSON('../data/destinations.json');
+            if (destinationsData && destinationsData.destinations) {
+                const westDestinations = destinationsData.destinations.filter(d => d.region === 'West');
+                const container = document.getElementById('west-destinations-container');
+                
+                container.innerHTML = westDestinations.map(dest => `
+                    <div class="destination-card">
+                        <div class="destination-card__image-box">
+                            <img src="${dest.image}" alt="${dest.name}" class="destination-card__image">
+                        </div>
+                        <div class="destination-card__content">
+                            <h3 class="destination-card__title">${dest.name}</h3>
+                            <p class="destination-card__description">${dest.description.substring(0, 150)}...</p>
+                            <a href="#" class="destination-card__link" onclick="openNewTabUrl('${dest.airport.url}')">
+                                <i class="fas fa-map-marker-alt"></i> ${dest.airport.name}
+                            </a>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        });
+    </script>
+</body>
+
+</html>

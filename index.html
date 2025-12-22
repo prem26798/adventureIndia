@@ -3,299 +3,255 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdventureIndia</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-o+3hgx3gok3j6D8yl19D7q5KR8+lcA7onbgg4Qz7Xx0fkaV+PmvNaUG4tRf6B4Jo" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/4275bdfb84.js" crossorigin="anonymous"></script>
+    <meta name="description"
+        content="Adventure India - Explore India's most breathtaking destinations, from the Himalayas to tropical backwaters. Discover adventure, culture, and natural beauty.">
+    <meta name="keywords" content="India, travel, adventure, destinations, tourism, culture">
+    <meta name="author" content="Adventure India Team">
+    <title>Adventure India - Discover India's Wonders</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <div class="nav__logo">
+            <a href="index.html">
+                <i class="fas fa-compass"></i> Adventure India
+            </a>
+        </div>
+        <button class="nav__toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+            <li class="nav__item">
+                <a href="index.html" class="nav__link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/north.html" class="nav__link">
+                    <i class="fas fa-map"></i> North
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/south.html" class="nav__link">
+                    <i class="fas fa-map"></i> South
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/east.html" class="nav__link">
+                    <i class="fas fa-map"></i> East
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/west.html" class="nav__link">
+                    <i class="fas fa-map"></i> West
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ===== HERO HEADER ===== -->
     <header>
-        <div class="header-background">
-            <div class="header-text">
-                ADVENTURE INDIA
+        <div class="header__background">
+            <div class="header__overlay"></div>
+            <div class="header__content">
+                <h1 class="header__title">Adventure India</h1>
+                <p class="header__subtitle">Discover the Soul of an Ancient Civilization</p>
             </div>
         </div>
     </header>
-    <nav>
-        <div class="logo">
-            <a href="#">Home <i class="fas fa-home"></i></a>
-        </div>
-        <div class="menu-icon" onclick="toggleNav()">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul class="navigations" id="nav-links">
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">North <i class="fas fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="newDelhi.html" class="dc">New Delhi</a>
-                    <a href="ladakh.html" class="dc">Ladakh</a>
-                    <a href="bhopal.html" class="dc">Bhopal</a>
-                </div>
-            </li>
-            <li><a href="#">South</a></li>
-            <li><a href="#">East</a></li>
-            <li><a href="#">West</a></li>
 
-        </ul>
-    </nav>
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- ===== ABOUT INDIA SECTION ===== -->
+        <section class="container">
+            <div class="hero">
+                <div class="hero__image">
+                    <img src="assets/images/hero/india-home.png" alt="India Map" style="width: 100%; height: auto;">
+                </div>
+                <div class="hero__content">
+                    <h2>India, Bharat, Hindustan</h2>
+                    <p>India is the seventh-largest country by area, the second-most populous nation, and the world's
+                        largest democracy. With its rich tapestry of cultures, religions, and traditions spanning
+                        thousands of years, India offers an unparalleled travel experience.</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Capital</th>
+                                <th>Largest City</th>
+                                <th>Area</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>New Delhi</td>
+                                <td>Mumbai</td>
+                                <td>3,287,263 km²</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Top 5 States/Union Territories by Tourist Visits</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>State/U.T.</th>
+                                <th>Annual Visitors</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Tamil Nadu</td>
+                                <td>345,061,140</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Uttar Pradesh</td>
+                                <td>233,977,619</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Karnataka</td>
+                                <td>179,980,191</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Andhra Pradesh</td>
+                                <td>165,433,898</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Maharashtra</td>
+                                <td>119,191,539</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FEATURED DESTINATIONS SECTION ===== -->
+        <section style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="text-center mb-3">Explore Featured Destinations</h2>
+                <p class="text-center" style="max-width: 600px; margin: 0 auto var(--spacing-2xl);">
+                    Discover India's most captivating destinations that showcase the country's incredible diversity,
+                    from tropical backwaters to majestic mountains.
+                </p>
+
+                <div id="destinations-container" class="cards-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+                    <!-- Destinations will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== STATISTICS SECTION ===== -->
+        <section>
+            <div class="container">
+                <div class="stats-section">
+                    <h2 style="color: white; text-align: center;">India at a Glance</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">1.4B+</div>
+                            <div class="stat-label">Population</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">28</div>
+                            <div class="stat-label">States</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Union Territories</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">22</div>
+                            <div class="stat-label">Official Languages</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LANDMARKS SECTION ===== -->
+        <section style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="text-center mb-3">Iconic Landmarks</h2>
+                <p class="text-center" style="max-width: 600px; margin: 0 auto var(--spacing-2xl);">
+                    Experience India's architectural marvels and cultural heritage sites that have captivated the world
+                    for centuries.
+                </p>
+
+                <div id="landmarks-container" class="cards-grid">
+                    <!-- Landmarks will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CALL TO ACTION ===== -->
+        <section>
+            <div class="container text-center">
+                <h2>Ready for Your Adventure?</h2>
+                <p style="font-size: 1.1rem; margin-bottom: var(--spacing-lg);">
+                    Begin your journey through India's diverse landscapes, ancient history, and vibrant cultures.
+                </p>
+                <a href="pages/north.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-right"></i> Explore Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer__content">
+            <div class="footer__section">
+                <h4><i class="fas fa-compass"></i> Adventure India</h4>
+                <p>Your gateway to India's most extraordinary destinations and experiences.</p>
+            </div>
+            <div class="footer__section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="pages/north.html">Destinations</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer__section">
+                <h4>Regions</h4>
+                <a href="#">North India</a>
+                <a href="#">South India</a>
+                <a href="#">East India</a>
+                <a href="#">West India</a>
+            </div>
+            <div class="footer__section">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 Adventure India. All rights reserved. | Crafted with <i class="fas fa-heart"></i> for
+                travelers.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
     <script>
-        function toggleNav() {
-            var navLinks = document.getElementById("nav-links");
-            navLinks.classList.toggle("active");
-        }
+        // Load content on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadDestinations();
+            loadLandmarks();
+        });
     </script>
-    <section>
-        <div class="bannerHome">
-            <div class="col-50">
-                <img src="./indianHome.png" alt="IndianHome">
-            </div>
-            <div class="col-50">
-                <h1>India, Bharat, Hindustan</h1>
-                <table id="indiaData">
-                    <thead>
-                        <tr>
-                            <th>Capital</th>
-                            <th>Largest City</th>
-                            <th>Area</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>New Delhi</td>
-                            <td>Mumbai</td>
-                            <td>3,287,263 <sup>[2]</sup> km2</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <ul>
-                    <li>It is the seventh-largest country by area, the second-most populous country, and the most
-                        populous democracy in the
-                        world.</li>
-                    <li>Top 5 states/UTs of India in number of domestic tourist visits.
-                        <table id="indiaData">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Rank
-                                    </th>
-                                    <th>
-                                        State/U.T
-                                    </th>
-                                    <th>
-                                        Numbers
-                                    </th>
-                                    </th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        Tamil Nadu
-                                    </td>
-                                    <td>
-                                        345,061,140
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        Uttar Pradesh
-                                    </td>
-                                    <td>
-                                        233,977,619
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        Karnataka
-                                    </td>
-                                    <td>
-                                        179,980,191
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        4
-                                    </td>
-                                    <td>
-                                        Andhra Pradesh
-                                    </td>
-                                    <td>
-                                        165,433,898
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        5
-                                    </td>
-                                    <td>
-                                        Maharashtra
-                                    </td>
-                                    <td>
-                                        119,191,539
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section>
-
-
-        <div class="bannerHome">
-            <h2 class="bestPlace">Best Place to visite in September 😉 </h2>
-            <div class='body2'>
-                <div class="container4">
-                    <div class="card" style="--clr: #009688">
-                        <div class="img-box">
-                            <img src="./julyKerala.jpg">
-                        </div>
-                        <div class="content">
-                            <h2>Kerala</h2>
-                            <p>
-                                “God’s Own Country” – Kerala truly comes alive in July with overflowing rivers, lush
-                                vegetation and coconut trees
-                                swaying to the tune of winds. The scenic beauty of the backwaters of Alleppey and the
-                                verdant hill station of Munnar and
-                                the waterfalls of Athirapally and Vazhachal is at the peak during monsoons.
-                            </p>
-                            <a target="_blank" href="https://goo.gl/maps/ppwP3QAw92PtNCjT8">
-                                Thiruvananthapuram  Airpot
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card" style="--clr: #FF3E7F">
-                        <div class="img-box">
-                            <img src="./udaipur.jpg">
-                        </div>
-                        <div class="content">
-                            <h2>Rajasthan</h2>
-                            <p>
-                                Udaipur is known as the "City of Lakes" and has a romantic 
-                                and regal atmosphere. The weather in the fall is pleasant 
-                                and suitable for exploring the city's palaces, temples, 
-                                and serene lakes without the extreme heat of summer
-                            </p>
-                            <a target="_blank" href="https://goo.gl/maps/rfrYiowNYcY8phHZ7">
-                                Jaipur Airpot
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card" style="--clr: #03A9F4">
-                        <div class="img-box">
-                            <img src="./mp.jpeg">
-                        </div>
-                        <div class="content">
-                            <h2>Pachmarhi, Madhya Pradesh</h2>
-                            <p>
-                                This hill station is often referred to as the 
-                                "Queen of Satpura" and is surrounded by lush 
-                                forests, waterfalls, and cave temples. The post-
-                                monsoon season brings mild temperatures and 
-                                vibrant greenery, making it a great time to 
-                                explore.
-                            </p>
-                            <a target="_blank" 
-                            href="https://goo.gl/maps/XeHRhn3cDgW8LNPJ7">Indore Airpot</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="bannerHome">
-
-            <div style="margin: 2rem 0px 0rem 1.5rem;">
-                <button class="button-55" role="button">North</button>
-            </div>
-            <div class="col-20">
-                <div class="imageCard">
-                    <div><img class="smallCard" src="./goldenTemple.jpg" alt="goldenTemple"></div>
-                    <div>
-                        <h4>Golden temple Amritsar</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-20">
-                <div class="imageCard">
-                    <div><img class="smallCard" src="./180px-A_view_of_Nainital_lake_with_the_morning_mist.jpg"
-                            alt="goldenTemple"></div>
-                    <div>
-                        <h4>Boats on Naini Lake in Kumaon</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-20">
-                <div class="imageCard">
-                    <div><img class="smallCard" src=".//180px-India-5716_-_Flickr_-_archer10_(Dennis).jpg"
-                            alt="goldenTemple"></div>
-                    <div>
-                        <h4>Khajuraho Temples at Khajuraho</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-20">
-                <div class="imageCard">
-                    <div><img class="smallCard" src="./180px-Udaipur_City_Palace_November_2013.jpg"
-                            alt="goldenTemple">
-                    </div>
-                    <div>
-                        <h4>Udaipur's City Palace</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-20">
-                <div class="imageCard">
-                    <div><img class="smallCard" src="./lotusTemple.jpg" alt="goldenTemple"></div>
-                    <h4>Lotus Temple New Delhi</h4>
-                </div>
-            </div>
-            <div class="col-20">
-                <div class="imageCard">
-                    <div><img class="smallCard" src="./Munshi_Ghat_in_Varanasi.jpg" alt="goldenTemple"></div>
-                    <div>
-                        <h4>Munshi Ghat in Varanasi</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-20">
-                <div class="imageCard">
-                    <div><img class="smallCard" src="./Sanchi_Stupa_from_Eastern_gate,_Madhya_Pradesh.jpg"
-                            alt="goldenTemple"></div>
-                    <div>
-                        <h4>Sanchi Stupa, Bhopal</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-20">
-                <div class="imageCard">
-                    <div><img class="smallCard" src="./Tiger_Kanha_National_Park.jpg" alt="goldenTemple"></div>
-                    <div>
-                        <h4>Kanha National Park</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
 </body>
 
 </html>

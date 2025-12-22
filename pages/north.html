@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore North India's destinations including Rajasthan and Madhya Pradesh.">
+    <meta name="keywords" content="North India, Rajasthan, Madhya Pradesh, tourism, destinations">
+    <title>North India - Adventure India</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <div class="nav__logo">
+            <a href="/index.html">
+                <i class="fas fa-compass"></i> Adventure India
+            </a>
+        </div>
+        <button class="nav__toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+            <li class="nav__item">
+                <a href="/index.html" class="nav__link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/north.html" class="nav__link">
+                    <i class="fas fa-map"></i> North
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/south.html" class="nav__link">
+                    <i class="fas fa-map"></i> South
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/east.html" class="nav__link">
+                    <i class="fas fa-map"></i> East
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/west.html" class="nav__link">
+                    <i class="fas fa-map"></i> West
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <header>
+        <div class="header__background" style="background: url('../assets/images/destinations/rajasthan.jpg') no-repeat center;">
+            <div class="header__overlay"></div>
+            <div class="header__content">
+                <h1 class="header__title">North India</h1>
+                <p class="header__subtitle">Land of Palaces, History, and Sacred Sites</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- ===== INTRODUCTION SECTION ===== -->
+        <section class="container">
+            <h2>Welcome to North India</h2>
+            <p style="font-size: 1.1rem;">
+                North India is the heartland of Indian history and culture. From the majestic Taj Mahal to the magnificent palaces of Rajasthan and the spiritual significance of New Delhi, North India offers an unforgettable journey through time. Experience the royal heritage, ancient temples, and the vibrant energy of India's capital and beyond.
+            </p>
+
+            <div class="city-tabs" style="margin-top: 1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+                <button class="btn btn-outline" onclick="filterNorthCity('New Delhi')">New Delhi</button>
+                <button class="btn btn-outline" onclick="filterNorthCity('Rajasthan')">Rajasthan</button>
+                <button class="btn btn-outline" onclick="filterNorthCity('Madhya Pradesh')">Madhya Pradesh</button>
+                <button class="btn btn-outline" onclick="filterNorthCity('All')">Show All</button>
+            </div>
+
+            <div class="visitor-options" style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+                <a class="btn btn-primary" href="/pages/visit-weekend.html?region=north">Weekend Traveler</a>
+                <a class="btn btn-primary" href="/pages/visit-food.html?region=north">Culinary Explorer</a>
+                <a class="btn btn-primary" href="/pages/visit-complete.html?region=north">Comprehensive Guide</a>
+                <a class="btn btn-primary" href="/pages/visit-adventure.html?region=north">Adventure Seeker</a>
+            </div>
+        </section>
+
+        <!-- ===== DESTINATIONS SECTION ===== -->
+        <section style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="text-center mb-3">North India Destinations</h2>
+                <div id="north-destinations-container" class="cards-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+                    <!-- Destinations will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA SECTION ===== -->
+        <section>
+            <div class="container text-center">
+                <h2>Explore the Grandeur of North India</h2>
+                <p style="font-size: 1.1rem; margin-bottom: var(--spacing-lg);">
+                    Discover the most iconic destinations and plan your next adventure.
+                </p>
+                <a href="../index.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer__content">
+            <div class="footer__section">
+                <h4><i class="fas fa-compass"></i> Adventure India</h4>
+                <p>Your gateway to India's most extraordinary destinations and experiences.</p>
+            </div>
+            <div class="footer__section">
+                <h4>Quick Links</h4>
+                <a href="../index.html">Home</a>
+                <a href="north.html">North India</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 Adventure India. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/main.js"></script>
+    <script>
+        let northDestinationsList = [];
+
+        function renderNorth(list) {
+            const container = document.getElementById('north-destinations-container');
+            if (!container) return;
+            container.innerHTML = list.map(dest => `
+                <div class="destination-card">
+                    <div class="destination-card__image-box">
+                        <img src="${dest.image}" alt="${dest.name}" class="destination-card__image">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">${dest.name}</h3>
+                        <p class="destination-card__description">${dest.description.substring(0, 150)}...</p>
+                        <a href="#" class="destination-card__link" onclick="openNewTabUrl('${dest.airport.url}')">
+                            <i class="fas fa-map-marker-alt"></i> ${dest.airport.name}
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterNorthCity(city) {
+            if (!northDestinationsList || northDestinationsList.length === 0) return;
+            if (city === 'All') {
+                renderNorth(northDestinationsList);
+                return;
+            }
+            if (city === 'New Delhi') {
+                // Load Delhi-specific content (landmarks and experiences)
+                loadJSON('../data/delhi.json').then(delhiData => {
+                    if (!delhiData) return;
+                    const container = document.getElementById('north-destinations-container');
+                    if (!container) return;
+                    // Render landmarks as cards
+                    container.innerHTML = (delhiData.landmarks || []).map(l => `
+                        <div class="destination-card">
+                            <div class="destination-card__image-box">
+                                <img src="${l.image}" alt="${l.name}" class="destination-card__image">
+                            </div>
+                            <div class="destination-card__content">
+                                <h3 class="destination-card__title">${l.name}</h3>
+                                <p class="destination-card__description">${l.description.substring(0,150)}...</p>
+                            </div>
+                        </div>
+                    `).join('');
+                });
+                return;
+            }
+
+            const target = city.toLowerCase();
+            const filtered = northDestinationsList.filter(d => {
+                return (
+                    (d.name && d.name.toLowerCase().includes(target)) ||
+                    (d.region && d.region.toLowerCase().includes(target)) ||
+                    (d.state && d.state.toLowerCase && d.state.toLowerCase().includes(target)) ||
+                    (d.description && d.description.toLowerCase().includes(target))
+                );
+            });
+            renderNorth(filtered);
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const destinationsData = await loadJSON('../data/destinations.json');
+            if (destinationsData && destinationsData.destinations) {
+                northDestinationsList = destinationsData.destinations.filter(d => (d.region && (d.region.toLowerCase() === 'north' || d.region.toLowerCase() === 'central')) || (d.name && d.name.toLowerCase().includes('rajasthan')) );
+                renderNorth(northDestinationsList);
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weekend Traveler - Short itineraries for quick getaways across India's regions.">
+  <title>Weekend Traveler — Adventure India</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="nav__logo">
+      <a href="/index.html">
+        <i class="fas fa-compass"></i> Adventure India
+      </a>
+    </div>
+    <button class="nav__toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav__menu" id="nav-menu">
+      <li class="nav__item">
+        <a href="/index.html" class="nav__link">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="/pages/north.html" class="nav__link">
+          <i class="fas fa-map"></i> North
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="/pages/south.html" class="nav__link">
+          <i class="fas fa-map"></i> South
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="/pages/east.html" class="nav__link">
+          <i class="fas fa-map"></i> East
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="/pages/west.html" class="nav__link">
+          <i class="fas fa-map"></i> West
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <header>
+    <div class="header__background" style="background: url('/assets/images/hero/india-home.png') no-repeat center;">
+      <div class="header__overlay"></div>
+      <div class="header__content">
+        <h1 class="header__title">Weekend Traveler</h1>
+        <p class="header__subtitle">Short, memorable itineraries for quick getaways</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== INTRO SECTION ===== -->
+  <section class="container" style="padding: var(--spacing-2xl) var(--spacing-lg);">
+    <h2>Curated Weekend Escapes</h2>
+    <p style="font-size:1.05rem; max-width: 800px; line-height: 1.8;">
+      Weekend Traveler curated experiences focus on short 1-3 day itineraries with easy logistics, nearby attractions and high-impact experiences — perfect for those with limited time but large expectations. Select a region above to see weekend-friendly picks tailored just for you.
+    </p>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="container">
+      <h2 class="text-center mb-3">Popular Weekend Destinations</h2>
+      <div id="visitor-content" class="visitor-grid">
+        <!-- Dynamic content will load here based on ?region= -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer__content">
+      <div class="footer__section">
+        <h4><i class="fas fa-compass"></i> Adventure India</h4>
+        <p>Your gateway to India's most extraordinary destinations and experiences.</p>
+      </div>
+      <div class="footer__section">
+        <h4>Quick Links</h4>
+        <a href="/index.html">Home</a>
+        <a href="/pages/north.html">North India</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Adventure India. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/scripts/main.js"></script>
+  <script src="/scripts/visits.js"></script>
+</body>
+</html>
