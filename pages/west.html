@@ -134,10 +134,12 @@
                 const westDestinations = destinationsData.destinations.filter(d => d.region === 'West');
                 const container = document.getElementById('west-destinations-container');
                 
-                container.innerHTML = westDestinations.map(dest => `
+                container.innerHTML = westDestinations.map(dest => {
+                    const imagePath = dest.image.startsWith('../') || dest.image.startsWith('/') ? dest.image : '../' + dest.image;
+                    return `
                     <div class="destination-card">
                         <div class="destination-card__image-box">
-                            <img src="${dest.image}" alt="${dest.name}" class="destination-card__image">
+                            <img src="${imagePath}" alt="${dest.name}" class="destination-card__image">
                         </div>
                         <div class="destination-card__content">
                             <h3 class="destination-card__title">${dest.name}</h3>
@@ -147,7 +149,7 @@
                             </a>
                         </div>
                     </div>
-                `).join('');
+                `;
             }
         });
     </script>
