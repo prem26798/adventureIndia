@@ -29,7 +29,7 @@ async function loadVisitorPage() {
       return;
     }
 
-    const destData = await loadJSON('/data/destinations.json');
+    const destData = await loadJSON('../data/destinations.json');
     if (!destData) {
       console.error('Could not load destinations data');
       return;
@@ -84,7 +84,7 @@ async function loadVisitorPage() {
     // If Delhi data exists and visitorKey is 'complete' or 'weekend', show Delhi landmarks below
     if (region.toLowerCase() === 'north' && (visitorKey === 'complete' || visitorKey === 'weekend')) {
       try {
-        const delhiData = await loadJSON('/data/delhi.json');
+        const delhiData = await loadJSON('../data/delhi.json');
         if (delhiData && delhiData.landmarks && delhiData.landmarks.length > 0) {
           const delhiTitle = document.createElement('h2');
           delhiTitle.textContent = 'New Delhi Highlights';

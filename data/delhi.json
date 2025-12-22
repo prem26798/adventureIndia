@@ -6,21 +6,21 @@
       "id": "india-gate",
       "name": "India Gate",
       "description": "An iconic 42-meter high memorial archway commemorating 70,000 Indian soldiers who lost their lives during World War I. Designed by Sir Edwin Lutyens, it stands as one of New Delhi's most recognizable structures and remains a popular gathering spot for both locals and tourists.",
-      "image": "/assets/images/landmarks/india-gate.jpg",
+      "image": "../assets/images/landmarks/india-gate.jpg",
       "history": "Inaugurated in 1931, India Gate bears the names of over 13,500 British and Indian soldiers. The monument features intricate stonework and is surrounded by well-maintained gardens."
     },
     {
       "id": "qutub-minar",
       "name": "Qutub Minar",
       "description": "A UNESCO World Heritage Site and one of the world's tallest brick minarets at 72 meters. Built in the 12th century, it showcases Indo-Islamic architecture with intricate carvings and inscriptions. Visitors can climb to the top for panoramic views of Delhi.",
-      "image": "/assets/images/landmarks/qutub-minar.jpg",
+      "image": "../assets/images/landmarks/qutub-minar.jpg",
       "history": "Construction began under Qutb-ud-din Aibak and was completed by his successor Iltutmish. The minar is surrounded by other historical structures including the Iron Pillar and Quwwat-ul-Islam Mosque."
     },
     {
       "id": "lotus-temple",
       "name": "Lotus Temple",
       "description": "A stunning Bahá'í House of Worship designed in the shape of a blooming lotus flower. This serene sanctuary welcomes people of all faiths and serves as a place of meditation and spiritual reflection. The white marble structure is renowned for its architectural beauty.",
-      "image": "/assets/images/landmarks/lotus-temple.jpg",
+      "image": "../assets/images/landmarks/lotus-temple.jpg",
       "history": "Completed in 1986, the Lotus Temple has become one of Delhi's most visited monuments. Its unique lotus-inspired design combines modern architecture with ancient Indian temple aesthetics."
     }
   ],
