@@ -1,0 +1,77 @@
+{
+  "navigation": [
+    {
+      "label": "Home",
+      "path": "index.html",
+      "icon": "fas fa-home"
+    },
+    {
+      "label": "North",
+      "path": "#",
+      "icon": "fas fa-caret-down",
+      "submenu": [
+        {
+          "label": "New Delhi",
+          "path": "pages/north.html"
+        },
+        {
+          "label": "Rajasthan",
+          "path": "pages/north.html"
+        },
+        {
+          "label": "Madhya Pradesh",
+          "path": "pages/north.html"
+        }
+      ]
+    },
+    {
+      "label": "South",
+      "path": "#",
+      "icon": "fas fa-caret-down",
+      "submenu": [
+        {
+          "label": "Kerala",
+          "path": "pages/south.html"
+        },
+        {
+          "label": "Tamil Nadu",
+          "path": "pages/south.html"
+        },
+        {
+          "label": "Karnataka",
+          "path": "pages/south.html"
+        }
+      ]
+    },
+    {
+      "label": "East",
+      "path": "#",
+      "icon": "fas fa-caret-down",
+      "submenu": [
+        {
+          "label": "West Bengal",
+          "path": "pages/east.html"
+        },
+        {
+          "label": "Odisha",
+          "path": "pages/east.html"
+        }
+      ]
+    },
+    {
+      "label": "West",
+      "path": "#",
+      "icon": "fas fa-caret-down",
+      "submenu": [
+        {
+          "label": "Goa",
+          "path": "pages/west.html"
+        },
+        {
+          "label": "Maharashtra",
+          "path": "pages/west.html"
+        }
+      ]
+    }
+  ]
+}

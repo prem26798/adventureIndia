@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore South India's diverse destinations including Kerala, Tamil Nadu, and Karnataka.">
+    <meta name="keywords" content="South India, Kerala, Tamil Nadu, Karnataka, tourism, destinations">
+    <title>South India - Adventure India</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <div class="nav__logo">
+            <a href="/index.html">
+                <i class="fas fa-compass"></i> Adventure India
+            </a>
+        </div>
+        <button class="nav__toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+            <li class="nav__item">
+                <a href="/index.html" class="nav__link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/north.html" class="nav__link">
+                    <i class="fas fa-map"></i> North
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/south.html" class="nav__link">
+                    <i class="fas fa-map"></i> South
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/east.html" class="nav__link">
+                    <i class="fas fa-map"></i> East
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/pages/west.html" class="nav__link">
+                    <i class="fas fa-map"></i> West
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <header>
+        <div class="header__background" style="background: url('../assets/images/destinations/kerala.jpg') no-repeat center;">
+            <div class="header__overlay"></div>
+            <div class="header__content">
+                <h1 class="header__title">South India</h1>
+                <p class="header__subtitle">Land of Ancient Temples and Natural Beauty</p>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Visitor options moved below hero to avoid overlap -->
+    <div class="container">
+        <div class="visitor-options">
+            <a class="btn btn-primary" href="/pages/visit-weekend.html?region=south">Weekend Traveler</a>
+            <a class="btn btn-primary" href="/pages/visit-food.html?region=south">Culinary Explorer</a>
+            <a class="btn btn-primary" href="/pages/visit-complete.html?region=south">Comprehensive Guide</a>
+            <a class="btn btn-primary" href="/pages/visit-adventure.html?region=south">Adventure Seeker</a>
+        </div>
+    </div>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- ===== INTRODUCTION SECTION ===== -->
+        <section class="container">
+            <h2>Welcome to South India</h2>
+            <p style="font-size: 1.1rem;">
+                South India is a treasure trove of cultural heritage, natural beauty, and spiritual significance. From Kerala's serene backwaters to Tamil Nadu's ancient temples and Karnataka's coffee plantations, South India offers a diverse range of experiences that cater to every type of traveler. Each region has its own unique charm and attractions.
+            </p>
+        </section>
+
+        <!-- ===== DESTINATIONS SECTION ===== -->
+        <section style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="text-center mb-3">South India Destinations</h2>
+                <div id="south-destinations-container" class="cards-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+                    <!-- Destinations will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA SECTION ===== -->
+        <section>
+            <div class="container text-center">
+                <h2>Discover the Wonders of South India</h2>
+                <p style="font-size: 1.1rem; margin-bottom: var(--spacing-lg);">
+                    Explore more destinations and plan your next adventure.
+                </p>
+                <a href="../index.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer__content">
+            <div class="footer__section">
+                <h4><i class="fas fa-compass"></i> Adventure India</h4>
+                <p>Your gateway to India's most extraordinary destinations and experiences.</p>
+            </div>
+            <div class="footer__section">
+                <h4>Quick Links</h4>
+                <a href="../index.html">Home</a>
+                <a href="south.html">South India</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 Adventure India. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const destinationsData = await loadJSON('../data/destinations.json');
+            if (destinationsData && destinationsData.destinations) {
+                const southDestinations = destinationsData.destinations.filter(d => d.region === 'South');
+                const container = document.getElementById('south-destinations-container');
+                
+                container.innerHTML = southDestinations.map(dest => `
+                    <div class="destination-card">
+                        <div class="destination-card__image-box">
+                            <img src="${dest.image}" alt="${dest.name}" class="destination-card__image">
+                        </div>
+                        <div class="destination-card__content">
+                            <h3 class="destination-card__title">${dest.name}</h3>
+                            <p class="destination-card__description">${dest.description.substring(0, 150)}...</p>
+                            <a href="#" class="destination-card__link" onclick="openNewTabUrl('${dest.airport.url}')">
+                                <i class="fas fa-map-marker-alt"></i> ${dest.airport.name}
+                            </a>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        });
+    </script>
+</body>
+
+</html>

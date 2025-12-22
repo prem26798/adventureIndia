@@ -1,0 +1,175 @@
+{
+  "destinations": [
+    {
+      "id": "rajasthan",
+      "name": "Rajasthan",
+      "region": "North",
+      "description": "The 'Land of Kings' presents a royal heritage with magnificent palaces, ancient forts, and vibrant desert landscapes. Udaipur, the 'City of Lakes,' captivates visitors with its romantic charm and architectural splendor.",
+      "image": "/assets/images/destinations/rajasthan.jpg",
+      "color": "#FF3E7F",
+      "bestSeason": "October to March",
+      "highlights": [
+        "City Palace of Udaipur",
+        "Lake Pichola",
+        "Jag Mandir",
+        "Bagore Ki Haveli"
+      ],
+      "airport": {
+        "name": "Jaipur International Airport",
+        "url": "https://goo.gl/maps/rfrYiowNYcY8phHZ7"
+      }
+    },
+    {
+      "id": "madhya-pradesh",
+      "name": "Madhya Pradesh",
+      "region": "Central",
+      "description": "Home to Pachmarhi, the 'Queen of Satpura,' this region offers spectacular hill stations surrounded by lush forests, mesmerizing waterfalls, and ancient cave temples. Perfect for nature enthusiasts and adventure seekers.",
+      "image": "/assets/images/destinations/madhya-pradesh.jpg",
+      "color": "#03A9F4",
+      "bestSeason": "October to May",
+      "highlights": [
+        "Pachmarhi Hill Station",
+        "Handi Khoh Waterfall",
+        "Satpura National Park",
+        "Ancient Cave Temples"
+      ],
+      "airport": {
+        "name": "Devi Ahilyabai Holkar Airport (Indore)",
+        "url": "https://goo.gl/maps/XeHRhn3cDgW8LNPJ7"
+      }
+    },
+    {
+      "id": "kerala",
+      "name": "Kerala",
+      "region": "South",
+      "description": "Known as 'God's Own Country,' Kerala offers breathtaking backwaters, lush tea plantations, and serene beaches. During the monsoon season, the landscape transforms into a paradise of verdant greenery.",
+      "image": "/assets/images/destinations/kerala.jpg",
+      "color": "#009688",
+      "bestSeason": "June to September (Monsoon)",
+      "highlights": [
+        "Backwaters of Alleppey",
+        "Munnar Hill Station",
+        "Athirapally Waterfalls",
+        "Vazhachal Waterfalls"
+      ],
+      "airport": {
+        "name": "Thiruvananthapuram International Airport",
+        "url": "https://goo.gl/maps/ppwP3QAw92PtNCjT8"
+      }
+    },
+    {
+      "id": "tamil-nadu",
+      "name": "Tamil Nadu",
+      "region": "South",
+      "description": "The 'Land of Temples,' Tamil Nadu is renowned for its Dravidian temples, ancient art forms, and vibrant culture. From Madurai's spiritual temples to Ooty's hill stations, it offers diverse experiences.",
+      "image": "/assets/images/destinations/kerala.jpg",
+      "color": "#E74C3C",
+      "bestSeason": "October to February",
+      "highlights": [
+        "Meenakshi Temple, Madurai",
+        "Ooty Hill Station",
+        "Nilgiri Mountains",
+        "Kanyakumari Beach"
+      ],
+      "airport": {
+        "name": "Chennai International Airport",
+        "url": "https://goo.gl/maps/1"
+      }
+    },
+    {
+      "id": "karnataka",
+      "name": "Karnataka",
+      "region": "South",
+      "description": "Karnataka combines stunning natural beauty with rich cultural heritage. From Coorg's coffee plantations to Bengaluru's modern charm, it's a perfect blend of tradition and progress.",
+      "image": "/assets/images/destinations/kerala.jpg",
+      "color": "#8E44AD",
+      "bestSeason": "September to May",
+      "highlights": [
+        "Coorg Coffee Plantations",
+        "Mullayanagiri Peak",
+        "Hampi's Ancient Temples",
+        "Bangalore City"
+      ],
+      "airport": {
+        "name": "Kempegowda International Airport",
+        "url": "https://goo.gl/maps/2"
+      }
+    },
+    {
+      "id": "west-bengal",
+      "name": "West Bengal",
+      "region": "East",
+      "description": "Home to the majestic Darjeeling tea gardens and the cultural richness of Kolkata. West Bengal offers a unique blend of colonial heritage, natural beauty, and artistic traditions.",
+      "image": "/assets/images/destinations/kerala.jpg",
+      "color": "#27AE60",
+      "bestSeason": "October to March",
+      "highlights": [
+        "Darjeeling Tea Gardens",
+        "Toy Train Journey",
+        "Kanyakumari Monastery",
+        "Colonial Architecture"
+      ],
+      "airport": {
+        "name": "Netaji Subhas Chandra Bose International Airport",
+        "url": "https://goo.gl/maps/3"
+      }
+    },
+    {
+      "id": "odisha",
+      "name": "Odisha",
+      "region": "East",
+      "description": "Odisha is a coastal gem with pristine beaches, ancient temples, and tribal art. The Jagannath Temple and Konark Sun Temple are architectural wonders that draw pilgrims and tourists worldwide.",
+      "image": "/assets/images/destinations/kerala.jpg",
+      "color": "#F39C12",
+      "bestSeason": "November to February",
+      "highlights": [
+        "Jagannath Temple, Puri",
+        "Konark Sun Temple",
+        "Chilika Lake",
+        "Chandipur Beach"
+      ],
+      "airport": {
+        "name": "Biju Patnaik International Airport",
+        "url": "https://goo.gl/maps/4"
+      }
+    },
+    {
+      "id": "goa",
+      "name": "Goa",
+      "region": "West",
+      "description": "The tropical paradise of Goa is renowned for its pristine beaches, Portuguese heritage, and vibrant nightlife. A perfect destination for relaxation, water sports, and cultural exploration.",
+      "image": "/assets/images/destinations/kerala.jpg",
+      "color": "#E67E22",
+      "bestSeason": "November to March",
+      "highlights": [
+        "Pristine Beaches",
+        "Portuguese Churches",
+        "Spice Plantations",
+        "Water Sports"
+      ],
+      "airport": {
+        "name": "Dabolim International Airport",
+        "url": "https://goo.gl/maps/5"
+      }
+    },
+    {
+      "id": "maharashtra",
+      "name": "Maharashtra",
+      "region": "West",
+      "description": "Maharashtra is a powerhouse of culture, commerce, and natural beauty. From Bombay's bustling streets to Pune's cultural scene and Ajanta-Ellora caves, it offers diverse experiences.",
+      "image": "/assets/images/destinations/kerala.jpg",
+      "color": "#3498DB",
+      "bestSeason": "October to May",
+      "highlights": [
+        "Gateway of India, Mumbai",
+        "Ajanta-Ellora Caves",
+        "Lonavala Hill Station",
+        "Pune City"
+      ],
+      "airport": {
+        "name": "Bombay International Airport",
+        "url": "https://goo.gl/maps/6"
+      }
+    }
+  ]
+}

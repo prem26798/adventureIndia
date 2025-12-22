@@ -1,0 +1,52 @@
+{
+  "landmarks": [
+    {
+      "id": "golden-temple",
+      "name": "Golden Temple",
+      "location": "Amritsar, Punjab",
+      "region": "North",
+      "description": "The holiest shrine of Sikhism, the Golden Temple (Sri Harmandir Sahib) is an architectural marvel with its golden dome reflecting in the surrounding pool. The spiritual ambiance and langar (community kitchen) make it a unique cultural experience.",
+      "image": "/assets/images/landmarks/golden-temple.jpg"
+    },
+    {
+      "id": "khajuraho",
+      "name": "Khajuraho Temples",
+      "location": "Khajuraho, Madhya Pradesh",
+      "region": "Central",
+      "description": "A UNESCO World Heritage Site featuring stunning medieval Hindu and Jain temples renowned for their intricate stone carvings and architectural brilliance. These temples represent the pinnacle of Indian temple architecture.",
+      "image": "/assets/images/landmarks/khajuraho.jpg"
+    },
+    {
+      "id": "varanasi",
+      "name": "Varanasi Ghats",
+      "location": "Varanasi, Uttar Pradesh",
+      "region": "North",
+      "description": "The spiritual capital of India, Varanasi's ancient ghats along the Ganges River showcase the eternal cycle of life and spirituality. Morning boat rides offer spiritual solace and cultural immersion.",
+      "image": "/assets/images/landmarks/varanasi.jpg"
+    },
+    {
+      "id": "sanchi-stupa",
+      "name": "Sanchi Stupa",
+      "location": "Sanchi, Madhya Pradesh",
+      "region": "Central",
+      "description": "One of the oldest stone structures in India, the Sanchi Stupa is a magnificent Buddhist monument with elaborate gateways and intricate stone carvings. It stands as a testament to ancient Indian architectural excellence.",
+      "image": "/assets/images/landmarks/sanchi-stupa.jpg"
+    },
+    {
+      "id": "kanha-national-park",
+      "name": "Kanha National Park",
+      "location": "Mandla District, Madhya Pradesh",
+      "region": "Central",
+      "description": "One of India's premier wildlife sanctuaries, Kanha National Park is known for its Bengal tigers and diverse wildlife. Safari expeditions offer thrilling encounters with nature in pristine forest settings.",
+      "image": "/assets/images/landmarks/kanha-park.jpg"
+    },
+    {
+      "id": "nainital-lake",
+      "name": "Nainital Lake",
+      "location": "Nainital, Uttarakhand",
+      "region": "North",
+      "description": "Nestled in the Kumaon hills, Nainital Lake is a picturesque destination known for its freshwater lake and surrounding pine forests. Boating and trekking are popular activities that attract adventure seekers.",
+      "image": "/assets/images/landmarks/nainital.jpg"
+    }
+  ]
+}
