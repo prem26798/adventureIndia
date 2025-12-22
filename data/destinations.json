@@ -5,7 +5,7 @@
       "name": "Rajasthan",
       "region": "North",
       "description": "The 'Land of Kings' presents a royal heritage with magnificent palaces, ancient forts, and vibrant desert landscapes. Udaipur, the 'City of Lakes,' captivates visitors with its romantic charm and architectural splendor.",
-      "image": "../assets/images/destinations/madhya-pradesh.jpg",
+      "image": "assets/images/destinations/madhya-pradesh.jpg",
       "color": "#FF3E7F",
       "bestSeason": "October to March",
       "highlights": [
@@ -24,7 +24,7 @@
       "name": "Madhya Pradesh",
       "region": "Central",
       "description": "Home to Pachmarhi, the 'Queen of Satpura,' this region offers spectacular hill stations surrounded by lush forests, mesmerizing waterfalls, and ancient cave temples. Perfect for nature enthusiasts and adventure seekers.",
-      "image": "../assets/images/destinations/madhya-pradesh.jpg",
+      "image": "assets/images/destinations/madhya-pradesh.jpg",
       "color": "#03A9F4",
       "bestSeason": "October to May",
       "highlights": [
@@ -43,7 +43,7 @@
       "name": "Kerala",
       "region": "South",
       "description": "Known as 'God's Own Country,' Kerala offers breathtaking backwaters, lush tea plantations, and serene beaches. During the monsoon season, the landscape transforms into a paradise of verdant greenery.",
-      "image": "../assets/images/destinations/kerala.jpg",
+      "image": "assets/images/destinations/kerala.jpg",
       "color": "#009688",
       "bestSeason": "June to September (Monsoon)",
       "highlights": [
@@ -62,7 +62,7 @@
       "name": "Tamil Nadu",
       "region": "South",
       "description": "The 'Land of Temples,' Tamil Nadu is renowned for its Dravidian temples, ancient art forms, and vibrant culture. From Madurai's spiritual temples to Ooty's hill stations, it offers diverse experiences.",
-      "image": "../assets/images/destinations/kerala.jpg",
+      "image": "assets/images/destinations/kerala.jpg",
       "color": "#E74C3C",
       "bestSeason": "October to February",
       "highlights": [
@@ -81,7 +81,7 @@
       "name": "Karnataka",
       "region": "South",
       "description": "Karnataka combines stunning natural beauty with rich cultural heritage. From Coorg's coffee plantations to Bengaluru's modern charm, it's a perfect blend of tradition and progress.",
-      "image": "../assets/images/destinations/kerala.jpg",
+      "image": "assets/images/destinations/kerala.jpg",
       "color": "#8E44AD",
       "bestSeason": "September to May",
       "highlights": [
@@ -100,7 +100,7 @@
       "name": "West Bengal",
       "region": "East",
       "description": "Home to the majestic Darjeeling tea gardens and the cultural richness of Kolkata. West Bengal offers a unique blend of colonial heritage, natural beauty, and artistic traditions.",
-      "image": "../assets/images/destinations/kerala.jpg",
+      "image": "assets/images/destinations/kerala.jpg",
       "color": "#27AE60",
       "bestSeason": "October to March",
       "highlights": [
@@ -119,7 +119,7 @@
       "name": "Odisha",
       "region": "East",
       "description": "Odisha is a coastal gem with pristine beaches, ancient temples, and tribal art. The Jagannath Temple and Konark Sun Temple are architectural wonders that draw pilgrims and tourists worldwide.",
-      "image": "../assets/images/destinations/kerala.jpg",
+      "image": "assets/images/destinations/kerala.jpg",
       "color": "#F39C12",
       "bestSeason": "November to February",
       "highlights": [
@@ -138,7 +138,7 @@
       "name": "Goa",
       "region": "West",
       "description": "The tropical paradise of Goa is renowned for its pristine beaches, Portuguese heritage, and vibrant nightlife. A perfect destination for relaxation, water sports, and cultural exploration.",
-      "image": "../assets/images/destinations/kerala.jpg",
+      "image": "assets/images/destinations/kerala.jpg",
       "color": "#E67E22",
       "bestSeason": "November to March",
       "highlights": [
@@ -157,7 +157,7 @@
       "name": "Maharashtra",
       "region": "West",
       "description": "Maharashtra is a powerhouse of culture, commerce, and natural beauty. From Bombay's bustling streets to Pune's cultural scene and Ajanta-Ellora caves, it offers diverse experiences.",
-      "image": "../assets/images/destinations/kerala.jpg",
+      "image": "assets/images/destinations/kerala.jpg",
       "color": "#3498DB",
       "bestSeason": "October to May",
       "highlights": [

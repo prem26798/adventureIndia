@@ -65,10 +65,12 @@ async function loadVisitorPage() {
 
     // Render selected items
     if (selected.length > 0) {
-      container.innerHTML = selected.map(d => `
+      container.innerHTML = selected.map(d => {
+        const imagePath = d.image.startsWith('../') || d.image.startsWith('/') ? d.image : '../' + d.image;
+        return `
         <article class="visitor-card">
           <div class="visitor-card__media">
-            <img src="${d.image}" alt="${escapeHtml(d.name)}" loading="lazy">
+            <img src="${imagePath}" alt="${escapeHtml(d.name)}" loading="lazy">
           </div>
           <div class="visitor-card__body">
             <h3>${escapeHtml(d.name)}</h3>
@@ -76,7 +78,8 @@ async function loadVisitorPage() {
             <p class="visitor-meta"><strong>Best season:</strong> ${d.bestSeason || 'Year-round'}</p>
           </div>
         </article>
-      `).join('');
+      `;
+      }).join('');
     } else {
       container.innerHTML = '<p style="text-align: center; padding: 2rem;">No destinations found for this region.</p>';
     }
@@ -92,15 +95,18 @@ async function loadVisitorPage() {
           container.appendChild(delhiTitle);
           const grid = document.createElement('div');
           grid.className = 'cards-grid';
-          grid.innerHTML = delhiData.landmarks.map(l => `
+          grid.innerHTML = delhiData.landmarks.map(l => {
+            const imagePath = l.image.startsWith('../') || l.image.startsWith('/') ? l.image : '../' + l.image;
+            return `
             <div class="destination-card">
-              <div class="destination-card__image-box"><img src="${l.image}" alt="${escapeHtml(l.name)}" class="destination-card__image" loading="lazy"></div>
+              <div class="destination-card__image-box"><img src="${imagePath}" alt="${escapeHtml(l.name)}" class="destination-card__image" loading="lazy"></div>
               <div class="destination-card__content">
                 <h3 class="destination-card__title">${escapeHtml(l.name)}</h3>
                 <p class="destination-card__description">${escapeHtml(truncateText(l.description || '', 140))}</p>
               </div>
             </div>
-          `).join('');
+          `;
+          }).join('');
           container.appendChild(grid);
         }
       } catch (e) {
