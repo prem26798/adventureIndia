@@ -808,6 +808,60 @@ footer {
   align-items: center;
   margin-top: var(--spacing-md);
 }
+
+/* ---- Per-page hero customizations ---- */
+/* Reduce hero height for internal pages and provide distinct visuals */
+.header__background {
+  /* keep default for home page */
+}
+
+.visit-weekend .header__background {
+  background-image: url('../assets/images/hero/india-home.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  height: 60vh;
+}
+
+.visit-food .header__background {
+  background-image: url('../assets/images/hero/delhi-home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  height: 60vh;
+}
+
+.visit-complete .header__background {
+  background-image: url('../assets/images/hero/header-background.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  height: 60vh;
+}
+
+.visit-adventure .header__background {
+  background-image: url('../assets/images/hero/india-home.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  height: 60vh;
+}
+
+/* unique title treatments so pages feel distinct */
+.visit-weekend .header__title { color: var(--color-accent); }
+.visit-food .header__title { color: var(--color-primary); }
+.visit-complete .header__title { color: var(--color-white); text-shadow: 2px 2px 6px rgba(0,0,0,0.6); }
+.visit-adventure .header__title { color: var(--color-primary-dark); }
+
+/* make sure content below the hero is visually separated */
+.visit-weekend main, .visit-food main, .visit-complete main, .visit-adventure main {
+  margin-top: -3rem;
+  background: var(--color-white);
+  border-top-left-radius: var(--border-radius-lg);
+  border-top-right-radius: var(--border-radius-lg);
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.03);
+  padding-top: 3rem;
+}
 .visitor-options .btn {
   padding: 0.6rem 1rem;
   font-size: 0.95rem;
